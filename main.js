@@ -1,0 +1,111 @@
+// static type
+// var b1: boolean = true;
+// var b1: number = 1;
+// var b2: number = 1.1;
+// var b3: number = 1e6;
+// var b1: string = 'single';
+// var b2: string = "double";
+// var b3: string = 'a' + "b";
+// var b1: boolean[] = [true, false];
+// var b2: string[] = ['a', "b", 'c'];
+// var b3: number[] = [0, 1, 2];
+// var b4: Array<boolean> = [true, false];
+// var b5: Array<string> = ['a', "b"];
+// var b6: Array<number> = [1, 2];
+// enum Attribute {Law, Neutral, Chaos};
+//
+// var attr1: Attribute = Attribute.Law;
+// var attr2: Attribute = Attribute.Neutral;
+// var attr3: Attribute = Attribute.Chaos;
+//
+// console.log(attr1);
+// console.log(attr2);
+// console.log(attr3);
+//
+// enum Color {Red = 1.1, Green = 2, Blue =3};
+//
+// console.log(Color.Red);
+// console.log(Color.Green);
+// console.log(Color.Blue);
+//
+// var c1: Color = Color.Red;
+// console.log(Color[c1]);
+// console.log(Color[Color.Green]);
+// console.log(Color[1.1]);
+// console.log(Color[2]);
+// console.log(Color[3]);
+// var v1: void;
+// var v2: void = undefined;
+// var v3 = null;
+//
+// function foo() {
+//   console.log('foo');
+// }
+//
+// console.log(v1);
+// console.log(v2);
+// console.log(v3);
+// foo();
+// function greeter(person: string){
+//   return 'Hello, ' + person;
+// }
+//
+// var user = 'Kado Tomohiro';
+// // var user = 1; // Type Error
+// //
+// document.body.innerHTML = greeter(user)
+// interface Person {
+//   firstname: string;
+//   lastname: string;
+// }
+//
+// function greeter(person: Person){
+//   return 'Hello, ' + person.lastname + person.firstname;
+// }
+//
+// var user = {
+//   firstname: 'Tomohiro',
+//   lastname: 'Kado'
+// };
+//
+// document.body.innerHTML = greeter(user)
+
+// var Student = (function () {
+//     function Student(firstname, lastname) {
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//         this.fullname = firstname + ' ' + lastname;
+//     }
+//     return Student;
+// })();
+// function greeter(person) {
+//     return 'Hello, ' + person.lastname + person.firstname;
+// }
+// var user = new Student('Tomohiro', 'Kado');
+// document.body.innerHTML = greeter(user);
+
+// classBankAccount {
+//   constructor (public balance: number) {
+//
+//   }
+//   deposit(credit: number) {
+//     this.barance += credit;
+//     return this.balance;
+//   }
+// }
+//
+// class CheckingAccount extends BankAccount {
+//   constructor(balance: number) {
+//     super(balance);
+//   }
+//   writeCheck(debit: number){
+//     this.barance -= debit;
+//   }
+// }
+
+module Long.NameSpaces {
+  export class C{}
+}
+new Long.NameSpaces.C();
+import C = Long.NameSpaces.C;
+new C();
